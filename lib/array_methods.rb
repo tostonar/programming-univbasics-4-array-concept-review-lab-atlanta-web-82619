@@ -11,7 +11,14 @@ end
 
 def find_max_value(array)
   # Add your solution here
-  array.max
+  # array.max
+  max = 0
+  array.length.times { |index|
+    if array[index] > max
+      max = array[index]
+    end
+  }
+  return max
 end
 
 def find_min_value(array)
